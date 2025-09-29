@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Graphics Design | Adwiz Digital India</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: black;
+      background-size: 200% 200%;
+      animation: bgMove 12s ease infinite;
+      margin: 0;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ===== HEADER STYLING ===== */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px;
+      background: black;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 30px #9370db;
+    }
+
+    .header img {
+      width: 55px;
+      height: auto;
+    }
+
+    .header a {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #ff69b4;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff69b4;
+    }
+
+    .main {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    span {
+      font-size: large;
+      color: wheat;
+    }
+
+    /* ===== MASONRY LAYOUT ===== */
+    .container {
+      column-count: 3;
+      column-gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .box {
+      background: linear-gradient(45deg, #e0a3ff, #ff69b4, #9370db);
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 100%;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      object-fit: cover;
+      background-color: black;
+      display: block;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    }
+
+    img:hover {
+      box-shadow: 0 10px 30px #e0a3ff;
+    }
+
+    /* ===== RESPONSIVE BREAKPOINTS ===== */
+    @media (max-width: 1024px) {
+      .container {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        column-count: 1;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .header a {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      span {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header top me fix -->
+  <div class="header">
+    <img src="logo.png" alt="Logo">
+    <a href="index.html">Adwiz Digital</a>
+  </div>
+
+  <div class="main">
+    <h1>Graphics Designs</h1>
+    <span>Showcasing projects that reflect precision, innovation and a passion for design.</span>
+  </div>
+
+  <!-- Masonry layout content -->
+  <div class="container">
+    <div class="box"><img src="1.png" alt="Creative Poster"></div>
+    <div class="box"><img src="8.jpg" alt="Design"></div>
+    <div class="box"><img src="7.jpg" alt="Template"></div>
+    <div class="box"><img src="3.png" alt="Social Media Banner"></div>
+    <div class="box"><img src="4.png" alt="Poster"></div>
+    <div class="box"><img src="9.jpg" alt="Design"></div>
+    <div class="box"><img src="2.jpg" alt="Creative Poster"></div>
+    <div class="box"><img src="5.png" alt="Banner"></div>
+    <div class="box"><img src="6.png" alt="Design"></div>
+  </div>
+
+</body>
+</html>
