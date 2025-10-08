@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> 
+  <title>Graphics Design | Adwiz Digital India</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: black;
+      background-size: 200% 200%;
+      animation: bgMove 12s ease infinite;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ===== HEADER STYLING ===== */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 12px;
+      padding: 18px;
+      background: black;
+      position: sticky; /* hamesha top par rahega */
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 30px #9370db;
+    }
+
+    .header img {
+      width: 55px;
+      height: auto;
+    }
+
+    .header a {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #ff69b4;
+      letter-spacing: 1px;
+    }
+
+    h1{
+      margin-top: 40px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff69b4;
+      align-items: center;
+    }
+
+    .main{
+      text-align: center;
+    }
+
+    span{
+      font-size: large;
+    }
+
+    /* ===== IMAGE CONTAINER ===== */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      gap: 2%;
+      padding: 40px 20px;
+    }
+
+    .box {
+      flex: 1 1 45%;
+      max-width: 45%;
+      background: linear-gradient(45deg, #e0a3ff, #ff69b4, #9370db);
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      padding: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    }
+
+    .box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      object-fit: contain;
+      background-color: black;
+    }
+
+    img:hover{
+      box-shadow: 0 10px 30px #e0a3ff;
+    }
+
+    footer 
+    {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      background: rgba(255,255,255,0.05);
+      margin-top: 40px;
+    }
+
+    
+
+    /* ===== RESPONSIVE RULES ===== */
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .header a {
+    font-size: 1.2rem;
+  }
+  .box {
+    flex: 1 1 48%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px;
+  }
+  .header img {
+    width: 45px;
+  }
+  .header a {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  span {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    display: block;
+  }
+  .box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-top: 20px !important; /* bada margin remove ho jaye mobile me */
+    height: auto !important;     /* fixed height hatao, img apne hisaab se fit ho */
+  }
+  .box img {
+    object-fit: cover; /* mobile me images crop na ho, neatly fit ho */
+    max-height: auto;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .header a {
+    font-size: 1rem;
+  }
+  .box{
+    max-width: 100%;
+    display: block;
+  }
+  .box img {
+    max-height: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header top me fix -->
+  <div class="header">
+    <img src="logo.png" alt="">
+    <a href="index.html">Adwiz Digital</a>
+  </div>
+
+  <div class="main">
+  <h1>Graphics Designs</h1>
+  <span style="color: wheat;">Showcasing projects that reflect precision, innovation and a passion for design.</span>
+  </div>
+
+  <!-- Niche content -->
+  <div class="container">
+    <div class="box"><img src="5.png" alt="Banner"></div>
+    <div class="box" style="height: 420px;margin-top: 180px;"><img src="8.jpg" alt="Design"></div>
+    <div class="box" style="height: 420px;margin-top: 180px;"><img src="7.jpg" alt="Template"></div>
+    <div class="box"><img src="3.png" alt="Social Media Banner"></div>
+    <div class="box"><img src="4.png" alt="Poster"></div>
+    <div class="box" style="height: 420px;margin-top: 180px;"><img src="9.jpg" alt="Design"></div>
+    <div class="box"><img src="6.png" alt="Design"></div>
+  </div>
+
+  
+
+  <footer>
+    <p>&copy; 2025 Adwiz Digital India. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

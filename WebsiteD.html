@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Shekh Meraj</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .custom-container {
+      background-color: #222;
+      margin-left: 25px;
+      margin-right: 25px;
+      padding: 30px 20px;
+      border-radius: 10px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 600;
+      color: #5a4632;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #d1c7bd;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .project-card {
+      background: #fff;
+      height: 200px;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect waisa hi jaise pehle tha */
+    .project-card:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: 0 12px 25px #88345e;
+      border-color: #b08968;
+    }
+
+    .row a:hover{
+      background-color: #9370db !important;
+    }
+
+    .project-card h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #3a2f2f;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      margin-bottom: 18px;
+      color: #555;
+    }
+
+    .btn{
+      margin-top: 35px;
+    }
+
+    .btn-sm {
+      font-size: 14px;
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+
+    #head{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 12px;
+      padding: 18px;
+      background: #222;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 30px #9370db;
+    }
+
+    .services-header 
+    {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+
+    .services-header h2 
+    {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ff69b4;
+    }
+
+    footer 
+    {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      background: rgba(255,255,255,0.05);
+      margin-top: 40px;
+    }
+
+    .back
+    {
+      height: 50px;
+      display: grid;
+      place-items: center;
+      /* background-color: #f7710a; */
+      
+    }
+
+    .page{
+      width: 150px;
+      height: 40px;
+      padding: .5%;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #555;
+    }
+
+    h6{
+      color: white;
+    }
+
+    .page:hover{
+      cursor: pointer;
+      transition: all .3s ease-in;
+      background-color: #9370db;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="custom-header py-3" id="head">
+    <div class="container d-flex align-items-center justify-content-between" style="margin-left:25px; margin-right:25px;">
+      <div class="logo d-flex align-items-center">
+        <a href="index.html" style="text-decoration: none;"><img src="logo.png" style="height:50px; width:auto; margin-right:10px;">
+        <span style="color: #e0a3ff; font-size:26px; font-weight:700;">Adwiz Digital</span></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="services-header">
+    <h2>Website Development</h2>
+    <p style="color: wheat;font-size: large;">Here’s what our skilled developers has built, just for you.</p>
+  </div>
+
+  <section id="projects" class="custom-container" style="margin-top:40px; margin-bottom:40px;">
+    <div class="row g-3">
+      <!-- Project cards without AOS -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Fresh-Bites</h5>
+          <p>Responsive to-do list using HTML, CSS, and JavaScript.</p>
+          <a href="https://bit.ly/Fresh-Bites" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="https://github.com/adwizdigitalindia" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Adwiz-Store</h5>
+          <p>Front-end UI clone of Spotify made with HTML & CSS.</p>
+          <a href="https://bit.ly/Adwiz-Site" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="https://github.com/adwizdigitalindia" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>built-in-consultant</h5>
+          <p>We provide Construction & Interior Designing Services.</p>
+          <a href="https://sites.google.com/view/builtinconsultant/home" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="https://github.com/adwizdigitalindia" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Adwiz-Mount</h5>
+          <p>Simple and responsive Tic Tac Toe game using JavaScript.</p>
+          <a href="https://bit.ly/Adwiz-Mount" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="https://github.com/adwizdigitalindia" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+
+       <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Weather App</h5>
+          <p>Fetches real-time weather data using OpenWeather API.</p>
+          <a href="" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="https://github.com/adwizdigitalindia" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+ 
+      <!--<div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Weather App</h5>
+          <p>Fetches real-time weather data using OpenWeather API.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="#" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+ 
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Weather App</h5>
+          <p>Fetches real-time weather data using OpenWeather API.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="#" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+ 
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Weather App</h5>
+          <p>Fetches real-time weather data using OpenWeather API.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="#" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+ 
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="project-card">
+          <h5>Portfolio Website</h5>
+          <p>Personal portfolio website showcasing my work and skills.</p>
+          <a href="#" class="btn btn-sm btn-outline-primary me-2">Live</a>
+          <a href="#" class="btn btn-sm btn-outline-success">GitHub</a>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <div class="back">
+    <div class="page">
+      <a href="index.html" style="text-decoration: none;"><h6>back to home <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></h6></a>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2025 Adwiz Digital India. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
