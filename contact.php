@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = strip_tags(trim($_POST['subject']));
     $message = strip_tags(trim($_POST['message']));
 
+    
     $mail = new PHPMailer(true);
 
     try {
