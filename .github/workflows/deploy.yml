@@ -10,9 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}  # Gmail App Password secret
+      WEB3_ACCESS_KEY: ${{ secrets.WEB3_ACCESS_KEY }}        # Web3Forms secret
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Inject Web3Forms Access Key
+        run: |
+          find . -name "*.html" -exec sed -i "s|{{WEB3_ACCESS_KEY}}|${WEB3_ACCESS_KEY}|g" {} +
 
       - name: Upload to InfinityFree
         uses: SamKirkland/FTP-Deploy-Action@v4.3.0
