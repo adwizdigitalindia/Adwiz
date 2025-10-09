@@ -594,25 +594,33 @@
             </div>
             
             <div class="contact-form glass">
-              <form id="contactForm" action="contact.php" method="POST">
-              <div class="form-group">
-                <input type="text" name="name" placeholder=" Name " required>
-              </div>
+  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="eb0f60c1-6b3c-4a90-9f39-389935b0efe55">
+    
+    <!-- Optional: Redirect after success -->
+    <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thankyou.html">  -->
 
-            <div class="form-group">
-              <input type="email" name="email" placeholder=" Email " required>
-            </div>
+    <div class="form-group">
+      <input type="text" name="name" placeholder=" Name " required>
+    </div>
 
-            <div class="form-group">
-              <input type="text" name="subject" placeholder=" Subject " required>
-            </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder=" Email " required>
+    </div>
 
-            <div class="form-group">
-              <textarea name="message" rows="5" placeholder=" Message... " required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-    </form>
+    <div class="form-group">
+      <input type="text" name="subject" placeholder=" Subject " required>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" rows="5" placeholder=" Message... " required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+  </form>
 </div>
+
 
         </div>
     </section>
