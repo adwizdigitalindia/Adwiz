@@ -595,9 +595,9 @@
             
             
             <div class="contact-form glass">
-  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+  <form id="contactForm" action="https://formsubmit.co/el/cufadi" method="POST">
     <!-- Web3Forms Access Key -->
-    <input type="hidden" name="access_key" value="eb0f60c1-6b3c-4a90-9f39-38935b0efe55">
+    <!-- <input type="hidden" name="access_key" value="eb0f60c1-6b3c-4a90-9f39-38935b0efe55"> -->
 
     
     <!-- Optional: Redirect after success -->
@@ -627,30 +627,7 @@
         </div>
     </section>
 
-   <script>
-const form = document.getElementById("contactForm");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const data = new FormData(form);
-  const response = await fetch(form.action, {
-    method: form.method,
-    body: data,
-    headers: {
-      Accept: "application/json"
-    }
-  });
-
-  if (response.ok) {
-    alert("✅ Message sent successfully!");
-    form.reset();
-  } else {
-    alert("❌ Something went wrong. Try again later.");
-  }
-});
-</script>
-
+  
 
     <!-- Footer -->
     <footer>
