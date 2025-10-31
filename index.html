@@ -595,7 +595,7 @@
             
             
             <div class="contact-form glass">
-  <form action="https://formsubmit.co/info.adwizdigitalindia@gmail.com" method="POST">
+            <form action="https://formsubmit.co/info.adwizdigitalindia@gmail.com" method="POST" onsubmit="showTicketMessage()">
     
     <!-- Disable Captcha -->
     <input type="hidden" name="_captcha" value="false">
@@ -674,7 +674,13 @@
     // Scroll top par (home section) pe le aao
     window.scrollTo(0, 0);
   });
-</script>    
+</script>  
+
+<script>
+    function showTicketMessage() {
+      document.getElementById('ticket-msg').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
