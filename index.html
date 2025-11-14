@@ -683,5 +683,13 @@
     }
   </script>
 
+   // ===== Form Submission =====
+    function handleSubmit(e) {
+      const id = generateTicketID();
+      document.getElementById('ticket-msg').style.display = 'block';
+      return true; // allow form submit
+    }
+  </script>
+
 </body>
 </html>
