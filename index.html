@@ -597,35 +597,37 @@
             
             <div class="contact-form glass">
     <form action="https://formsubmit.co/info.adwizdigitalindia@gmail.com" method="POST" onsubmit="return handleSubmit(event)">
+      
+      
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      
+      <!-- Redirect Page -->
+      <input type="hidden" name="_next" value="https://yourwebsite.com/pf-10q-page.html">
+      
+      <!-- Form Fields -->
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Name" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="email" name="number" placeholder="Number" required>
+      </div>
+      
+      <div class="form-group">
+        <input type="text" name="email" placeholder="Email" required>
+      </div>
+      
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Message..." required></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    </div>
     
-    <!-- Disable Captcha -->
-    <input type="hidden" name="_captcha" value="false">
+  </div>
 
-    <!-- Redirect Page -->
-    <input type="hidden" name="_next" value="https://yourwebsite.com/pf-10q-page.html">
-
-    <!-- Form Fields -->
-    <div class="form-group">
-      <input type="text" name="name" placeholder="Name" required>
-    </div>
-
-    <div class="form-group">
-      <input type="email" name="number" placeholder="Number" required>
-    </div>
-
-    <div class="form-group">
-      <input type="text" name="email" placeholder="Email" required>
-    </div>
-
-    <div class="form-group">
-      <textarea name="message" rows="5" placeholder="Message..." required></textarea>
-    </div>
-
-    <button type="submit" class="submit-btn">Send Message</button>
-</div>
-
-</div>
-</form>
     </section>
 
 
